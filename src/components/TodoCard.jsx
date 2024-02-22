@@ -20,6 +20,7 @@ export default function TodoCard( { todo }) {
 
     const pauseTimer = () => {
       clearInterval(timerInterval);
+      setTimerInterval(null); 
     }
 
     const resetTimer = () => {
